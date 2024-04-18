@@ -339,7 +339,7 @@ export opaque type Request = {
 // Faster than that is unnecessary and should be throttled on the client. It also
 // adds unnecessary overhead to do more splits. We don't know if it's a higher or lower
 // end device but higher end suffer less from the overhead than lower end does from
-// not getting small enough pieces. We error on the side of low end.
+// not getting small enough pieces. We err on the side of low end.
 // We base this on low end 3G speeds which is about 500kbits per second. We assume
 // that there can be a reasonable drop off from max bandwidth which leaves you with
 // as little as 80%. We can receive half of that each 500ms - at best. In practice,
